@@ -18,7 +18,7 @@ const scaleVariants = {
 
 const Header = () => {
   return (
-    <div className='app__header app__flex'>
+    <div id='home' className='app__header app__flex'>
       <motion.div
         whileInView={{ x: [-100, 0], opacity: [0,1] }}
         transition={{ duration: 0.5 }}
@@ -67,7 +67,7 @@ const Header = () => {
       <motion.div
         variant={ scaleVariants }
         whileInView={scaleVariants.whileInView}
-        className='app_header-circles'
+        className='app__header-circles'
       >
 {/* adding icons for the technologies I know how to use */}
         {[images.flutter, images.redux, images.sass].map((circle, index) => (
